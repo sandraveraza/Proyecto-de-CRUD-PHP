@@ -43,7 +43,12 @@
 
         <div class="container">
             <?php 
-                include ($route->mostrarSeccion('home'));
+             if (isset($_GET['action'])){
+                $action = $_GET['action'];
+             }else{
+                 $action = 'home';
+             }
+                include ($route->mostrarSeccion($action));
             ?>
         </div>
 

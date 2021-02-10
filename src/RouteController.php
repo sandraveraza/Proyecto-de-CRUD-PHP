@@ -8,8 +8,8 @@ class RouteController {
                 $contenido = "views/home.php";
                 break;
             
-            case 'estudiante':
-                $contenido = "views/estudiante.php";
+            case 'editarestudiante':
+                $contenido = "views/editarestudiante.php";
                 break;
 
             default:

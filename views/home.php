@@ -6,6 +6,12 @@ use App\EstudianteModel;
 $estudianteModel = new EstudianteModel();
 $estudiantes = $estudianteModel->getAll();
 //var_dump($estudiantes);
+
+if (isset($_GET['delete'])){
+    $id = $_GET['delete'];
+    $estudianteModel->delete($id);
+}
+
 ?>
 
 <div class="row mt-4">
@@ -13,7 +19,6 @@ $estudiantes = $estudianteModel->getAll();
         <table class="table table-striped">
             <thead>
                 <tr>
-                <th scope="col">#</th>
                 <th scope="col">Cedula</th>
                 <th scope="col">Nombre</th>
                 <th scope="col">Apellido</th>
@@ -26,7 +31,6 @@ $estudiantes = $estudianteModel->getAll();
                       
                 ?>
                 <tr>
-                    <th scope="row">1</th>
                     <td><?php echo $estudiante["cedula"]?></td>
                     <td><?php echo $estudiante["nombre1"]?></td>
                     <td><?php echo $estudiante["apellido1"]?></td>
@@ -36,8 +40,8 @@ $estudiantes = $estudianteModel->getAll();
                             Acciones
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Editar</a>
-                            <a class="dropdown-item" href="#">Eliminar</a>
+                            <a href="index.php?action=editarestudiante&id=<?php echo $estudiante["id"]?>" class="dropdown-item">Editar</a>
+                            <a href="index.php?action=home&delete=<?php echo $estudiante["id"]?>" class="dropdown-item" href="#">Eliminar</a>
                         </div>
                         </div>
                     </td>

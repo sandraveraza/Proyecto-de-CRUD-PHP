@@ -23,15 +23,15 @@
             return $resulset;
         }
 
-        public function get($cedula){
+        public function get($id){
             $query = "
             SELECT * FROM `estudiante` 
-            WHERE 
-                ci_estudiante  = :cedula
+                WHERE 
+            id  = :id
             ";
 
             $stmt = $this->instancia->prepare($query); 
-            $stmt->bindParam(':cedula', $cedula); 
+            $stmt->bindParam(':id', $id); 
             
                 if($stmt->execute()){
                     $resulset = $stmt->fetch(\PDO::FETCH_ASSOC);
