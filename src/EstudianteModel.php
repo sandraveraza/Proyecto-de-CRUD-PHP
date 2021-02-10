@@ -4,10 +4,15 @@
         
         public function insert($estudiante){
             $query = "
-            INSERT INTO `estudiante`( `cedula`, `nombre1`,  `apellido1`) VALUES ('
+            INSERT INTO `estudiante`(`cedula`, `nombre1`, `nombre2`, `apellido1`, `apellido2`, `carrera`, `correo`, `telefono`) VALUES ('
                                 $estudiante->cedula', 
                                 '$estudiante->nombre1',
-                                '$estudiante->apellido1'
+                                '$estudiante->nombre2',
+                                '$estudiante->apellido1',
+                                '$estudiante->apellido2',
+                                '$estudiante->carrera',
+                                '$estudiante->correo',
+                                '$estudiante->telefono'
                                 )
         
             ";
