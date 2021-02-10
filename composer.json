@@ -1,0 +1,19 @@
+{
+    "name": "sandia/sandia",
+    "description": "Proyecto de sandia",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sandra ",
+            "email": "sandia@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
