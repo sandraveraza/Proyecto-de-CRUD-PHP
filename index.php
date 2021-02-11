@@ -1,5 +1,12 @@
 <?php namespace App;
+
+    date_default_timezone_set('America/Lima');
+    @ob_start();
+    session_start();
+
+
     require_once './vendor/autoload.php';
+    
     $route = new RouteController();
 ?>
 
@@ -12,6 +19,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- CSS only -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/css/estilo.css">
+        
         <title>Aplicacion</title>
     
     </head>
@@ -31,13 +40,22 @@
                     <a class="nav-link" href="index.php?action=estudiante">Estudiantes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?action=profesores">Profesores</a>
+                    <a class="nav-link" href="index.php?action=tutores">Tutores</a>
                 </li>
                
             
                
                 </ul>
-                
+                <form class="form-inline my-2 my-lg-0">
+                    <?php 
+                        if (isset($_SESSION["usuario"])) {
+                            echo ' <a href="index.php?action=logout" class="btn btn-danger my-2 my-sm-0" type="submit">Cerrar Sesion</a>';
+                           
+                        }else{
+                            echo ' <a href="index.php?action=login" class="btn btn-success my-2 my-sm-0" type="submit">Iniciar Sesion</a>';
+                        }
+                    ?>
+                </form>
             </div>
         </nav>
 

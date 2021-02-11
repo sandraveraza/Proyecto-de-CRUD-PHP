@@ -1,6 +1,10 @@
 
 <?php
 
+if (!isset($_SESSION["usuario"])) {
+    header("Location:index.php?&action=login");  
+}
+
 use App\EstudianteModel;
 $estudianteModel = new EstudianteModel();
 $id = $_GET["id"];

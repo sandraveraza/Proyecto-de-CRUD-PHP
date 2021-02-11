@@ -8,6 +8,16 @@ class RouteController {
                 $contenido = "views/home.php";
                 break;
             
+            /*Rutas de tutotes*/
+            case 'login':
+                $contenido = "views/login.php";
+                break;
+
+            case 'logout':
+                session_destroy();
+                header("Location:index.php?&action=home");  
+                break;
+
             /*Rutas de estudiantes*/
             case 'estudiante':
                 $contenido = "views/listaestudiandes.php";
@@ -19,6 +29,19 @@ class RouteController {
 
             case 'nuevoestudiante':
                 $contenido = "views/nuevoestudiante.php";
+                break;
+
+            /*Rutas de tutotes*/
+            case 'tutores':
+                $contenido = "views/listatutores.php";
+                break;
+
+            case 'editaretutor':
+                $contenido = "views/editaretutor.php";
+                break;
+
+            case 'nuevotutor':
+                $contenido = "views/nuevotutor.php";
                 break;
 
                 

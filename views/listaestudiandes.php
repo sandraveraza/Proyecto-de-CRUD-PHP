@@ -1,6 +1,10 @@
 
 <?php
 
+if (!isset($_SESSION["usuario"])) {
+    header("Location:index.php?&action=login");  
+}
+
 use App\EstudianteModel;
 
 $estudianteModel = new EstudianteModel();
@@ -42,7 +46,7 @@ if (isset($_GET['delete'])){
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a href="index.php?action=editarestudiante&id=<?php echo $estudiante["id"]?>" class="dropdown-item">Editar</a>
-                            <a href="index.php?action=home&delete=<?php echo $estudiante["id"]?>" class="dropdown-item" href="#">Eliminar</a>
+                            <a href="index.php?action=estudiante&delete=<?php echo $estudiante["id"]?>" class="dropdown-item" href="#">Eliminar</a>
                         </div>
                         </div>
                     </td>

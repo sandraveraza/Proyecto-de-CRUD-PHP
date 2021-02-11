@@ -1,6 +1,8 @@
 
 <?php
 
+
+
 use App\EstudianteModel;
 $estudianteModel = new EstudianteModel();
 
@@ -21,7 +23,7 @@ if (isset($_POST)){
     <div class="col">
        <h3>Nuevo de Estudiante</h3>
 
-        <?php if ($agregado) { ?>
+        <?php if (isset($agregado)) { ?>
 
        <div class="alert alert-success" role="alert">
             Registro exitoso!!!

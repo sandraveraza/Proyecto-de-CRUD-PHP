@@ -1,0 +1,311 @@
+/*     PRINCIPAL            */
+#index{
+	margin: 0;
+	padding: 0;
+	background: url(fondoindex.jpg);             
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+a{
+	color: white;
+}
+h1{
+	color: white;
+	font: bold 350% sans-serif;
+	margin-top: 40px;
+	text-align: center;	
+}
+
+
+h2{
+	color: white;
+	font: bold 200% sans-serif;
+	text-align: center;
+	}
+
+
+button{
+	width: 150px;
+	height: 40px;
+	border-radius: 4px;
+	border-style: solid;
+	background-color: aquamarine;
+	border-color: aquamarine;
+	margin-left: 725px;
+}
+.form-registro-index{
+	width: 250px;
+	height: 275px;
+	background: #24303c;
+	padding: 20px;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:white;
+	box-shadow: 7px 13px 37px #000;
+	
+}
+.controls-index{
+	width: 90%;
+	background: ;
+	padding: 10px;
+	border-radius: 4px;
+	border-color: whitesmoke;
+	margin-bottom: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+
+}
+.form-registro-index .botons-index{
+	width: 100%;
+	background-color: blue;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin: 10px 0;
+	font-size: 16px;
+}
+.form-registro-index p{
+	padding: 0px;
+	text-align: center;
+}
+
+
+/*     HOME            */
+#home{
+
+	background: url(fondohome.jpg);
+	background-size: cover; 
+}
+#menu{
+	background-color: teal;
+}
+#menu ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#menu ul li {
+	display: inline-block;
+}
+#menu ul li a{
+	color: white;
+	display: block;
+	padding: 30px;
+	text-decoration: none;
+}
+#menu ul li a:hover{
+	background-color: #CCD9D9;
+}
+.item-r{
+	float: right;
+}
+
+/*     REGISTRO DE ESTUDIANTE           */
+#estudiante{
+	margin: 0;
+	padding: 0;
+	background: url(fondoprincipal.jpg);             
+	background-size: cover;
+	background-color: #B0C1FF;
+}
+.form-register{
+	width: 250px;
+	height: 480px;
+	background: #24303c;
+	padding: 20px;
+	margin-left: 100px;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:white;
+	box-shadow: 7px 13px 37px white;
+	
+}
+.controls{
+	width: 90%;
+	background: ;
+	padding: 10px;
+	border-radius: 4px;
+	border-color: whitesmoke;
+	margin-bottom: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+
+}
+.form-register .botons{
+	width: 100%;
+	background-color: blue;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+/*     REGISTRO DE TUTOR           */
+#tutor{
+	
+	background-color: #CCD9D9;
+}
+.form-register-tutor{
+	width: 250px;
+	height: 480px;
+	background: #24303c;
+	padding: 20px;
+	margin-left: 100px;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:white;
+	box-shadow: 7px 13px 37px white;
+	
+}
+.controls-tutor{
+	width: 90%;
+	background: ;
+	padding: 10px;
+	border-radius: 4px;
+	border-color: whitesmoke;
+	margin-bottom: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+
+}
+.form-register .botons{
+	width: 100%;
+	background-color: blue;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+
+
+
+/*     REGISTRO DE TEG                  */
+#teg{
+	background-color:#CCD9D9;
+}
+.form-register-tesis{
+	width: 700px;
+	height: 450px;
+	background: #24303c;
+	padding: 20px;
+	margin-left: 100px;
+	margin-top: 20px;
+	border-radius: 4px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color:white;
+	box-shadow: 7px 13px 37px white;
+	
+}
+.controls-tesis{
+	width: 97%;
+	background: ;
+	padding: 10px;
+	border-radius: 4px;
+	border-color: whitesmoke;
+	margin-bottom: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+
+}
+.controls-tesis-objres{
+	width: 90%;
+	background: ;
+	padding: 35px;
+	border-radius: 4px;
+	border-color: whitesmoke;
+	margin-bottom: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 18px;
+
+}
+.form-register-tesis .botons{
+	width: 100%;
+	background-color: blue;
+	border: none;
+	padding: 10px;
+	color: white;
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+
+
+
+/*     REGISTRO DE Jurado               */
+#jurado{
+	background-color: #CCD9D9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.wrap{
+	width: 90%;
+	max-width: 1000px;
+}
+.widget{
+	width: 40%;
+	margin: 32px;
+}
+.widget p{
+	display: inline-block;
+	line-height: 1em;
+}
+.fecha{
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size: 1.5em;
+	margin-bottom: 5px,
+	padding: 20px;
+	width: 100%; 
+	background: rgba(0,0,0,.5);}  /*no aparece*/
+
+.reloj{
+	font-family: Oswald, Arial;
+	width: 100%;
+	padding: 20px;
+	font-size: 4em;
+	text-align: center;
+	background: rgba(0,0,0,.5);
+	margin-top: 5px;
+}
+.reloj .caja-segundos{
+	display: inline-block;
+}
+.reloj .segundos,
+.reloj .ampm{
+	font-size: 2rem;
+	display: block;
+}
